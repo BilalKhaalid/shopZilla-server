@@ -4,7 +4,7 @@ import { extname } from "node:path";
 
 const storage = multer.diskStorage({
   destination(req, file, callback) {
-    callback(null, "uploads/");
+    callback(null, "uploads/images");
   },
   filename(req, file, callback) {
     const uniqueId = uuid4();
